@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import gql from 'graphql-tag';
+import gql from 'graphql-tag'; //This helps to write mutations
 import { graphql } from 'react-apollo';
 import { Link, hashHistory } from 'react-router';
 import query from '../queries/fetchSongs';
@@ -13,7 +13,6 @@ class SongCreate extends Component {
 
   onSubmit(event) {
     event.preventDefault();
-
     this.props.mutate({
       variables: {
         title: this.state.title
@@ -41,6 +40,7 @@ class SongCreate extends Component {
   }
 }
 
+//Outside Class Mutation (with helps of Query Variables in GraphiQL)
 const mutation = gql`
   mutation AddSong($title: String){
     addSong(title: $title) {
@@ -48,4 +48,5 @@ const mutation = gql`
     }
   }
 `;
+
 export default graphql(mutation)(SongCreate);

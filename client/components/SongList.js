@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import gql from 'graphql-tag';
-import { graphql } from 'react-apollo';
+import gql from 'graphql-tag'; // This helps to write queries
+import { graphql } from 'react-apollo'; //This helps bond queries and components
 import { Link } from 'react-router';
 import query from '../queries/fetchSongs';
 

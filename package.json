@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "nodemon index.js --ignore client"
   },
-  "author": "",
+  "author": "Franics Pham",
   "license": "ISC",
   "dependencies": {
     "apollo-client": "^0.8.1",
