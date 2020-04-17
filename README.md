@@ -2,7 +2,7 @@
 
 Run the following commands in your terminal, after cloning the repo:
 ```
-> cd users
+> npm install
 > npm run dev
 ```
 
